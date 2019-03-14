@@ -183,7 +183,7 @@ GameManager.prototype.move = function (direction) {
     this.addRandomTile();
 
     if (!this.movesAvailable()) {
-      window.parent.postMessage('helooosafdg', "*");
+      window.parent.postMessage(this.score.toString(), "*");
       this.over = true; // Game over
     }
 
