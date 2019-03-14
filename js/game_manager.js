@@ -184,7 +184,7 @@ GameManager.prototype.move = function (direction) {
 
     if (!this.movesAvailable()) {
       this.over = true; // Game over
-      window.parent.postMessage(this.score);
+      window.parent.postMessage(this.score, "*");
     }
 
     this.actuate();
